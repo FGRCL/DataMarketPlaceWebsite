@@ -37,10 +37,12 @@ li a:hover {
   background-color: #111;
 }
 
-div.personas{
-
-}
-
 img.map{
-  width: 100vw;
+  width: 75vw;
+}
+img.inline-image{
+  width: 100%;
+}
+div.image-container{
+  margin: 0 -150px;
 }
