@@ -1,0 +1,13 @@
+h1,
+h2,
+strong,
+body {
+  color: #333;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+section.content {
+    margin: 0vh 25vw 0vh 25vw;
+    line-height: 1.5;
+    padding: 4em 1em;
+}
