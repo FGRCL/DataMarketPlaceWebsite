@@ -38,11 +38,25 @@ li a:hover {
 }
 
 img.map{
-  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
 }
 img.inline-image{
   width: 100%;
 }
-div.image-container{
+/* div.image-container{
   margin: 0 -150px;
+} */
+
+#banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
