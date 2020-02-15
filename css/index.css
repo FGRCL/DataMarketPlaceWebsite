@@ -21,9 +21,10 @@ img.map{
 img.inline-image{
   width: 100%;
 }
-/* div.image-container{
+
+div.image-container{
   margin: 0 -150px;
-} */
+}
 
 .banner {
   position: absolute;
@@ -56,6 +57,10 @@ img.inline-image{
   margin-right: 0px;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+div.endspace{
+  height: 5vw;
 }
 
 /* #title {
