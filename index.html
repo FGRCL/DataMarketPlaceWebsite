@@ -9,11 +9,11 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/medium.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <title>ShareSeed</title>
 </head>
 
@@ -196,10 +196,32 @@
         <br><br>
         Andrew was most displeased with ???
       </p>
-      <img class="d-block w-100" src="./images/journeys/Andrew Journey Map.svg">
+      <div class="w3-content" style="max-width:1200px; margin: 0 -200px;">
+        <img class="mySlides" src="./images/journeys/Andrew Journey Map.svg" style="width:100%; display: none;">
+        <img class="mySlides" src="./images/journeys/Charles Journey Map.svg" style="width:100%;  display: none;">
+        <img class="mySlides" src="./images/journeys/Jessica Journey Map.svg" style="width:100%; display: none;">
+        <img class="mySlides" src="./images/journeys/Pierre Journey Map.svg" style="width:100%">
+
+      
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off d-block w-100" src="./images/journeys/Andrew Journey Map.svg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off d-block w-100" src="./images/journeys/Charles Journey Map.svg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off d-block w-100" src="./images/journeys/Jessica Journey Map.svg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off d-block w-100" src="./images/journeys/Pierre Journey Map.svg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+          </div>
+        </div>
+      </div>
+      <!-- <img class="d-block w-100" src="./images/journeys/Andrew Journey Map.svg">
       <img class="d-block w-100" src="./images/journeys/Charles Journey Map.svg">
       <img class="d-block w-100" src="./images/journeys/Jessica Journey Map.svg">
-      <img class="d-block w-100" src="./images/journeys/Pierre Journey Map.svg">
+      <img class="d-block w-100" src="./images/journeys/Pierre Journey Map.svg"> -->
       <br>
       <br>
       <h2>Sketches</h2>
@@ -366,6 +388,28 @@
     // check out the repo at: 
     // https://github.com/lucagez/medium.css
     //# sourceURL=pen.js
+  </script>
+
+  <script>
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+    }
   </script>
 
 
