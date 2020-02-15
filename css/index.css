@@ -45,9 +45,10 @@ img.map{
 img.inline-image{
   width: 100%;
 }
-/* div.image-container{
+
+div.image-container{
   margin: 0 -150px;
-} */
+}
 
 .banner {
   position: absolute;
