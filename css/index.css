@@ -61,8 +61,7 @@ img.inline-image{
   padding-right: 0px;
 }
 #banner {
-  position: absolute;
-  top: 0;
+  position: absolute; 
   right: 0;
   left: 0;
   width: 100vw;
@@ -70,6 +69,7 @@ img.inline-image{
   margin-right: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  text-align: left;
 }
 
 .journey {
@@ -80,3 +80,9 @@ img.inline-image{
   padding-left: 0px;
   padding-right: 0px;
 }
+
+/* #title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+} */
