@@ -11,31 +11,7 @@ section.content {
     line-height: 1.5;
     padding: 4em 1em;
 } */
-ul {
-  list-style-type: none;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
 
 img.map{
   margin-left: auto;
