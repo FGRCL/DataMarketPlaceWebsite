@@ -49,6 +49,17 @@ img.inline-image{
   margin: 0 -150px;
 } */
 
+.banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 #banner {
   position: absolute;
   top: 0;
